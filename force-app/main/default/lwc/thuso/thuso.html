@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Thuso" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <p>Hello, I'm Thuso. How can I help?</p>
+            <lightning-input value={userId} onchange={handleUserIdChange}></lightning-input>
+            <lightning-button label="Reset Password" onclick={resetPassword}></lightning-button>
+            <p if:true={message} class="slds-text-color_success">{message}</p>
+            <p if:true={errorMessage} class="slds-text-color_error">{errorMessage}</p>
+        </div>
+    </lightning-card>
+</template>
